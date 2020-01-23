@@ -38,7 +38,7 @@ function primeFactorizer(number, dictionary) {
   if (dictionary[3] < threes) {
     dictionary[3] = threes;
   }
-  //primes will fit pattern n*6 +/= 1.  this will iterate through prime factors and count their occurences
+  //primes will fit pattern n*6 +/- 1.  this will iterate through prime factors and count their occurences
   let mult = 6;
   for (let mult = 6; mult <= number + 1; mult += 6) {
     let counter1 = 0;
